@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,epsfig,epstopdf,titling,url,array,tkz-berge}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes.geometric}
+\usepackage{etoolbox}
+
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{2C6221}
+\hypersetup{
+	colorlinks=true,
+	filecolor=magenta,      
+	urlcolor=blue,
+	linkcolor=linkcolor
+}
+
+\def\corr{\mathrm{corr}}
+\linewidth=10cm
+\textwidth=16cm
+\oddsidemargin=0pt
+\textheight=22cm
+
+\definecolor{codegray}{gray}{0.9}
+\newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
+
+\title{mipt-linux-core-book}
+
+\begin{document}
+\maketitle
+
+\newpage
+\tableofcontents
+
+\include{interruptions}
+
+\end{document}
